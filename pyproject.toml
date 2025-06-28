@@ -8,7 +8,6 @@ packages = [
   { include = "src" }
 ]
 
-
 [tool.poetry.dependencies]                              
 python = "^3.11"                                                         # Версия Python
 pydantic = "^2.7"                                                        # Для конфигураций
