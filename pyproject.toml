@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "drone-routing"                                                   # Название проекта
+version = "0.1.0"                                                        # Версия проекта
+description = "AI-маршрутизация БПЛА с учётом рельефа, радиотени и ПВО"  # Описание (видно в Poetry и PyPI)
+authors = ["Vanish <vanya43pos@gmail.com>"]                              # Автор
+readme = "README.md"                                                     # Файл с описанием проекта
+                    
+[tool.poetry.dependencies]                              
+python = "^3.11"                                                         # Версия Python
+pydantic = "^2.7"                                                        # Для конфигураций
+numpy = "^1.26"                                                          # Для расчётов
+matplotlib = "^3.8"                                                      # Визуализация
+geopandas = "^0.14"                                                      # Работа с геоданными
+osmnx = "^1.9"                                                           # Загрузка дорожной карты из OpenStreetMap
+networkx = "^3.3"                                                        # Графы и маршруты
+                    
+[tool.poetry.group.dev.dependencies]                                
+pytest = "^8.2"                                                          # Тестирование
+flake8 = "^7.0"                                                          # Проверка стиля кода
+                        
+[build-system]                               
+requires = ["poetry-core"]                                               # Стандарт для сборки пакета
+build-backend = "poetry.core.masonry.api"                                # Используется Poetry
