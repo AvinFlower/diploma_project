@@ -4,6 +4,9 @@ version = "0.1.0"                                                        # Ве�
 description = "AI-маршрутизация БПЛА с учётом рельефа, радиотени и ПВО"  # Описание (видно в Poetry и PyPI)
 authors = ["Vanish <vanya43pos@gmail.com>"]                              # Автор
 readme = "README.md"                                                     # Файл с описанием проекта
+packages = [
+  { include = "src" }
+]
                     
 [tool.poetry.dependencies]                              
 python = "^3.11"                                                         # Версия Python
